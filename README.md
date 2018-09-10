@@ -19,21 +19,23 @@ There is no perfect pixel. There are only perfect pixels. Each individual pixel 
 
 #### How to build a 3D pixel, a really bad 2D ASCII art rendering:
 
-> -----------------------
-> |                     |
-> |    3D PRINTED       |
-> |    TRANSLUCENT      |
-> |        BOX          |
-> |                     |
-> |     [RGB LED]       |
-> -----------------------
-> Battery | Battery | Battery
-> Microprocessor with WiFi/Bluetooth
-> -----------------------
-> Light Sensor, USB, Button 
-> ...
-> On/Off Switch
-> -----------------------
+<pre>
+-----------------------
+|                     |
+|    3D PRINTED       |
+|    TRANSLUCENT      |
+|        BOX          |
+|                     |
+|     [RGB LED]       |
+-----------------------
+Battery | Battery | Battery
+Microprocessor with WiFi/Bluetooth
+-----------------------
+Light Sensor, USB, Button 
+...
+On/Off Switch
+-----------------------
+</pre>
 
 Since each pixel is fundamentally identical to every other pixel, the magic happens in the software. Pixels can be trained individually or in groups. They can learn colors from their neighbors, from the internet through APIs, or from mobile phones or other Bluetooth devices. They can display single colors or streams of colors either by live feed, or by memory, and they can be synchronized to timers across the pixel flock. Memory works offline but cannot be updated and will be erased the next time the pixel is trained. It would be nice if these colors were stored in a form of memory that is not lost when power is interrupted (pixel death) so that the pixel does not need to be retrained when it is revived. 
 

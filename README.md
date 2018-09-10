@@ -1,8 +1,7 @@
 # Pet Pixels
 ### The Pet Rock of Our Generation
 
-This document is confidential although I don’t know why. This idea will get ripped off in half of a heartbeat by anyone who takes one look at it, so I’m just going to get ahead of the game and open source it. Please also note that pet pixels do not, at present, exist, although I hope to change that soon.
-What is a Pet Pixel?
+## What is a Pet Pixel?
 
 A pet pixel is a portable frosted plastic cube that lights up with a selected color, similar to a smart light bulb, except it’s portable and contains its own power source. The pixel can be “trained” by holding it over a color swatch or natural element to learn the color of that item or it can learn by either WIFI, Bluetooth, or USB, whichever is the cheapest for the pixel developer or most convenient for the pixel owner. Pixels can be grouped together or used independently, and while there is no theoretical limit to the number of pixels that can be grouped together, there are practical limits. Equally there is also no theoretical size limit to how large or small a pixel can be, but there are practical limits. For example my 3D printer can print a maximum size of 12cm3 so that’s as big as they’re going to get right now. 
 
@@ -20,21 +19,21 @@ There is no perfect pixel. There are only perfect pixels. Each individual pixel 
 
 #### How to build a 3D pixel, a really bad 2D ASCII art rendering:
 
------------------------
-|                     |
-|    3D PRINTED       |
-|    TRANSLUCENT      |
-|        BOX          |
-|                     |
-|     [RGB LED]       |
------------------------
-Battery | Battery | Battery
-Microprocessor with WiFi/Bluetooth
------------------------
-Light Sensor, USB, Button 
-...
-On/Off Switch
------------------------
+> -----------------------
+> |                     |
+> |    3D PRINTED       |
+> |    TRANSLUCENT      |
+> |        BOX          |
+> |                     |
+> |     [RGB LED]       |
+> -----------------------
+> Battery | Battery | Battery
+> Microprocessor with WiFi/Bluetooth
+> -----------------------
+> Light Sensor, USB, Button 
+> ...
+> On/Off Switch
+> -----------------------
 
 Since each pixel is fundamentally identical to every other pixel, the magic happens in the software. Pixels can be trained individually or in groups. They can learn colors from their neighbors, from the internet through APIs, or from mobile phones or other Bluetooth devices. They can display single colors or streams of colors either by live feed, or by memory, and they can be synchronized to timers across the pixel flock. Memory works offline but cannot be updated and will be erased the next time the pixel is trained. It would be nice if these colors were stored in a form of memory that is not lost when power is interrupted (pixel death) so that the pixel does not need to be retrained when it is revived. 
 

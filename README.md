@@ -54,56 +54,57 @@ Functionality
     Play Looped File (if available)
     Hold last value if no file
     
-  ## Pixel Hub Design
-    
-  Parts:
-    Raspberry Pi
-    Powered USB Hub (# of pixels + 1)
-    Power splitter for 16 pixel model
+## Pixel Hub Design
 
-  Functionality: 
+[Hub Sketch](https://user-images.githubusercontent.com/43132136/52911828-1446a700-325e-11e9-8efd-16f9cd6b8117.jpeg)
     
-    Assigned a block number and downloads data for a set number of pixels
-    Controls groups of 4, 7, 9, or 16 pixels
-    Manages pixels via USB
-    Connects to other controllers via WiFi Mesh
-    Connects to image server via WiFi
-    Syncs with time server and sets clocks on pixels
-    If pixels are missing, those pixels are ignored but the data is still requested as if it were there
-    
-  Software:
-      
-    As a hub comes online, it requests 
-      Find image server (config)
-      Current time from the server
-      RGB and duration values for the total number of pixels that it manages
-      If a group number is assigned, it requests the pixels for its assigned group number
-      If no group number is specified, the server will send one along with the data for the pixels
-    File is confirmed as received (checksum)  or re-requested 
-    If this fails, re-boot the box and try again
-    All the data for the stream should be downloaded before the success code is sent to the server
-    Set clocks on all connected pixels 
-    Set clock on pixel plug/unplug
-    Send data to all pixels
-    Poll server for start time
-    Send start time to all pixels
-    
-    Request:
-      Hub UUID
-      Number of Pixels
-      Hub Number (optional)
-        Hub numbers are initially assigned by the server but can be set via config
-      
-    Response:
-      Pixel data for the hub number
-      Start time (if available)
-      The next available hub number (if unspecified)      
-    
-    Start:
-    
-      Set clock
-      Send time to USB
-      Send color values to USB
-      Send start time to USB
-      Wait for interrupt
-      
+Parts:
+  Raspberry Pi
+  Powered USB Hub (# of pixels + 1)
+  Power splitter for 16 pixel model
+
+Functionality: 
+
+  Assigned a block number and downloads data for a set number of pixels
+  Controls groups of 4, 7, 9, or 16 pixels
+  Manages pixels via USB
+  Connects to other controllers via WiFi Mesh
+  Connects to image server via WiFi
+  Syncs with time server and sets clocks on pixels
+  If pixels are missing, those pixels are ignored but the data is still requested as if it were there
+
+Software:
+
+  As a hub comes online, it requests 
+    Find image server (config)
+    Current time from the server
+    RGB and duration values for the total number of pixels that it manages
+    If a group number is assigned, it requests the pixels for its assigned group number
+    If no group number is specified, the server will send one along with the data for the pixels
+  File is confirmed as received (checksum)  or re-requested 
+  If this fails, re-boot the box and try again
+  All the data for the stream should be downloaded before the success code is sent to the server
+  Set clocks on all connected pixels 
+  Set clock on pixel plug/unplug
+  Send data to all pixels
+  Poll server for start time
+  Send start time to all pixels
+
+  Request:
+    Hub UUID
+    Number of Pixels
+    Hub Number (optional)
+      Hub numbers are initially assigned by the server but can be set via config
+
+  Response:
+    Pixel data for the hub number
+    Start time (if available)
+    The next available hub number (if unspecified)      
+
+  Start:
+
+    Set clock
+    Send time to USB
+    Send color values to USB
+    Send start time to USB
+    Wait for interrupt

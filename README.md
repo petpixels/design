@@ -11,6 +11,8 @@ While Pet Pixels are cute on their own, what they allow is fungibility in displa
 
 ## Individual Pixel Design
 
+[Pixel Sketch](https://user-images.githubusercontent.com/43132136/52911577-6ede0400-325a-11e9-8a68-5b328a711ef9.jpeg)
+
 Parts:
 
   Arduino
@@ -53,7 +55,7 @@ Functionality
   Parts:
     Raspberry Pi
     Powered USB Hub (# of pixels + 1)
-    Power splitter for 16 pixel models
+    Power splitter for 16 pixel model
 
   Functionality: 
     

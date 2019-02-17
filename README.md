@@ -3,11 +3,15 @@
 
 ## What is a Pet Pixel?
 
-A pet pixel is a portable frosted plastic cube that lights up with a selected color, similar to a smart light bulb, except it’s portable and contains its own power source. The pixel can be “trained” by holding it over a color swatch or natural element to learn the color of that item or it can learn by either WIFI, Bluetooth, or USB, whichever is the cheapest for the pixel developer or most convenient for the pixel owner. Pixels can be grouped together or used independently, and while there is no theoretical limit to the number of pixels that can be grouped together, there are practical limits. Equally there is also no theoretical size limit to how large or small a pixel can be, but there are practical limits. For example my 3D printer can print a maximum size of 12cm3 so that’s as big as they’re going to get right now. 
+A pet pixel is a portable frosted cube that lights up with a selected color, similar to a smart bulb, except it’s portable and contains its own power source. The pixel can be “trained” by holding it over a color swatch or natural element to learn the color of that item or it can learn by either WIFI, Bluetooth, or USB, whichever is the cheapest for the pixel developer or most convenient for the pixel owner. Pixels can be grouped together or used independently, and while there is no theoretical limit to the number of pixels that can be grouped together, there are practical limits. Equally there is also no theoretical size limit to how large or small a pixel can be, but there are practical limits. For example my 3D printer can print a maximum size of 11cm<sup>3</sup> so that’s as big as they’re going to get right now. 
+
+## Pixel artists
+
+Each pixel is indivdiually trainable which allow artists to create boards of pixel art displays in either single or animated formats. Create pixel art in square or hex grids and even have it wrap around surfaces. Pixels sizes are flexible so each pixel can be a different size or the shape customized to fit anywhere.
 
 ## Fungible displays
 
-While Pet Pixels are cute on their own, what they allow is fungibility in displays. (Expand more later)
+While Pet Pixels are cute on their own, what they allow is fungibility in displays. By creating each pixel in the display as a 'smart' autonomous unit it means each pixel in the display is interchangeable. No more dead pixels. Just pull the defective pixel out and replace it with a new one and the display will continue uninterrupted. Display size can be adjusted by adding more pixels. Pixel size itself can be adjusted. A 1" pixel can be removed from the display, put into an 1ft cube and function independently, lighting that cube for as long as the battery lasts. It can then be put back into the hub to charge. 
 
 ## Individual Pixel Design
 
